@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92D20B42AE9EEB200D9DE2C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92D20B32AE9EEB200D9DE2C /* Response.swift */; };
+		B9390FB52AF92F9500D3ABA9 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9390FB42AF92F9500D3ABA9 /* Structure.swift */; };
 		B9817F232AE893CA00E9C287 /* Magic8BallApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9817F222AE893CA00E9C287 /* Magic8BallApp.swift */; };
-		B9817F252AE893CA00E9C287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9817F242AE893CA00E9C287 /* ContentView.swift */; };
 		B9817F272AE893CD00E9C287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9817F262AE893CD00E9C287 /* Assets.xcassets */; };
 		B9817F2A2AE893CD00E9C287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9817F292AE893CD00E9C287 /* Preview Assets.xcassets */; };
+		B9817F332AE8942F00E9C287 /* EightBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9817F322AE8942F00E9C287 /* EightBall.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B92D20B32AE9EEB200D9DE2C /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		B9390FB42AF92F9500D3ABA9 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
 		B9817F1F2AE893CA00E9C287 /* Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9817F222AE893CA00E9C287 /* Magic8BallApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallApp.swift; sourceTree = "<group>"; };
-		B9817F242AE893CA00E9C287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B9817F262AE893CD00E9C287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9817F292AE893CD00E9C287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B9817F322AE8942F00E9C287 /* EightBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EightBall.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9390FB32AF92F6600D3ABA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9390FB42AF92F9500D3ABA9 /* Structure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B9817F162AE893CA00E9C287 = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				B9817F222AE893CA00E9C287 /* Magic8BallApp.swift */,
-				B9817F242AE893CA00E9C287 /* ContentView.swift */,
+				B9390FB32AF92F6600D3ABA9 /* Model */,
+				B9817F312AE893FD00E9C287 /* Helpers */,
+				B9817F302AE893F000E9C287 /* Views */,
 				B9817F262AE893CD00E9C287 /* Assets.xcassets */,
 				B9817F282AE893CD00E9C287 /* Preview Content */,
 			);
@@ -65,6 +79,22 @@
 				B9817F292AE893CD00E9C287 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B9817F302AE893F000E9C287 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B9817F322AE8942F00E9C287 /* EightBall.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B9817F312AE893FD00E9C287 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B92D20B32AE9EEB200D9DE2C /* Response.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9817F252AE893CA00E9C287 /* ContentView.swift in Sources */,
+				B9390FB52AF92F9500D3ABA9 /* Structure.swift in Sources */,
+				B9817F332AE8942F00E9C287 /* EightBall.swift in Sources */,
+				B92D20B42AE9EEB200D9DE2C /* Response.swift in Sources */,
 				B9817F232AE893CA00E9C287 /* Magic8BallApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
