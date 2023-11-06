@@ -17,6 +17,9 @@ struct EightBall: View {
     //Stores the input given by the user
     @State var currentResponse = ""
     
+    //The saved list
+    @State var saved: [Response] = []
+    
     //refresh button opacity
     @State var refreshOpacity = 0.0
     
@@ -52,6 +55,10 @@ struct EightBall: View {
                 Text(currentResponse)
                 
                 Button(action: {
+                    
+                    //Saves the questions repsonse to list
+                    saveToList()
+                    
                     //Resets the response
                     currentResponse = ""
                     
@@ -68,6 +75,17 @@ struct EightBall: View {
                 .font(.title3)
                 .opacity(refreshOpacity)
                 
+                List(saved) { currentSave in
+                    
+                    VStack(alignment: .leading){
+                        Text(currentSave.userQuestion)
+                            .bold()
+                            .font(.title3)
+                        Text(currentSave.generatedResponse)
+                            .font(.subheadline)
+                    }
+                }
+                
                 Spacer()
                 
             }
@@ -75,6 +93,16 @@ struct EightBall: View {
             .navigationTitle("Magic 8 Ball")
             .padding()
         }
+    }
+    
+    //MARK: Functions
+    func saveToList() {
+        saved.insert(
+            Response(userQuestion: question, generatedResponse: currentResponse),
+            at: 0
+        )
+        
+        print(saved)
     }
 }
 
